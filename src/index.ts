@@ -1,5 +1,6 @@
 import { Elysia } from "elysia";
 import { userRoutes } from "./routes/users";
+import { usersRoutes } from "./routes/users-routes";
 
 const app = new Elysia()
   .get("/", () => ({
@@ -12,6 +13,7 @@ const app = new Elysia()
     uptime: process.uptime(),
   }))
   .use(userRoutes)
+  .use(usersRoutes)
   .listen(Number(process.env.PORT) || 3000);
 
 console.log(
