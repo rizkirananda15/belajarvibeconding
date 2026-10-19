@@ -8,6 +8,13 @@
       "when": 1791527275550,
       "tag": "0000_perpetual_captain_marvel",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1792130400000,
+      "tag": "0001_add_password_drop_updated_at",
+      "breakpoints": true
     }
   ]
 }
